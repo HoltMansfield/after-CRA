@@ -1,0 +1,27 @@
+{
+  "name": "after-cra",
+  "version": "1.0.0",
+  "description": "Add goodies like redux and material-ui after running the marvelous CRA ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoltMansfield/after-CRA.git"
+  },
+  "keywords": [
+    "React",
+    "CRA"
+  ],
+  "author": "Holt Mansfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HoltMansfield/after-CRA/issues"
+  },
+  "homepage": "https://github.com/HoltMansfield/after-CRA#readme",
+  "dependencies": {
+    "commander": "^2.19.0",
+    "rekuire": "^0.1.9"
+  }
+}
