@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "description": "Add goodies like redux and material-ui after running the marvelous CRA ",
   "main": "index.js",
+  "doc-scripts": {
+    "lint": "run the linter",
+    "lint:watch": "run the linter in watch mode",
+    "test": "run the unit tests",
+    "test:watch": "run the unit tests in watch mode"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint commander commands index.js",
+    "lint:watch": "npm-watch lint",
+    "test": "NODE_ENV=test ava commands/**/*.test.js --serial --verbose",
+    "test:watch": "NODE_ENV=test ava commands/**/*.test.js --serial --watch --verbose"
   },
   "repository": {
     "type": "git",
@@ -12,7 +21,8 @@
   },
   "keywords": [
     "React",
-    "CRA"
+    "CRA",
+    "Create-React-App"
   ],
   "author": "Holt Mansfield",
   "license": "ISC",
@@ -23,5 +33,10 @@
   "dependencies": {
     "commander": "^2.19.0",
     "rekuire": "^0.1.9"
+  },
+  "devDependencies": {
+    "ava": "^1.2.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0"
   }
 }
